@@ -1,0 +1,68 @@
+<?php
+
+namespace App\Observers;
+
+use App\Models\Notification;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\TransactionMail;
+use App\Models\User;
+class NotificationObserver
+{
+    /**
+     * Handle the Notification "created" event.
+     *
+     * @param  \App\Models\Notification  $notification
+     * @return void
+     */
+    public function created(Notification $notification)
+    {
+        //
+        $reciepient = User::find($notification-> recipientId);
+        Mail::to($reciepient->email)->send(new TransactionMail($notification));        
+
+    }
+
+    /**
+     * Handle the Notification "updated" event.
+     *
+     * @param  \App\Models\Notification  $notification
+     * @return void
+     */
+    public function updated(Notification $notification)
+    {
+        //
+    }
+
+    /**
+     * Handle the Notification "deleted" event.
+     *
+     * @param  \App\Models\Notification  $notification
+     * @return void
+     */
+    public function deleted(Notification $notification)
+    {
+        //
+    }
+
+    /**
+     * Handle the Notification "restored" event.
+     *
+     * @param  \App\Models\Notification  $notification
+     * @return void
+     */
+    public function restored(Notification $notification)
+    {
+        //
+    }
+
+    /**
+     * Handle the Notification "force deleted" event.
+     *
+     * @param  \App\Models\Notification  $notification
+     * @return void
+     */
+    public function forceDeleted(Notification $notification)
+    {
+        //
+    }
+}
