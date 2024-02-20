@@ -142,5 +142,4 @@
         <script src="{{asset ('js/app.js')}}"></script>
     </body>
 
-<!-- Mirrored from www.themesbrand.com/skote/layouts/layouts-hori-preloader.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Feb 2021 08:03:24 GMT -->
 </html>

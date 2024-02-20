@@ -2,7 +2,6 @@
 <html lang="en">
 
     
-<!-- Mirrored from www.themesbrand.com/skote/layouts/auth-login-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Feb 2021 08:09:16 GMT -->
 <head>
         
         <meta charset="utf-8" />
