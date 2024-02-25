@@ -317,6 +317,9 @@
                                                 <div class="mb-3">
                                                     <label for="basicpill-email-input">Id Number</label>
                                                     <input type="text"name="idNumber"  class="form-control fidNumber  fieldValidate" target="all" id="basicpill-email-input">
+                                                    <div class="inputErrMesage">
+                                                        The ID Number Already Exists.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

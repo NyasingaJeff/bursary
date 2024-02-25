@@ -210,14 +210,13 @@ $(document).ready(function () {
     
         $('#registration')[0].getElementsByTagName('input').forEach(
         e=>{
-            try {
                 e.addEventListener("focusout",(event)=>{
-                    document.getElementById(e.getAttribute('name')).innerHTML = e.value; 
-                })
-            } catch (error) {
-        
-    }
-    
+                try {
+                    document.getElementById(e.getAttribute('name')).innerHTML = e.value;                     
+                } catch (error) {
+                    
+                }
+                })    
         }
     )
  
